@@ -1,14 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {
-  BlockIcon,
-  CheckmarkCircleIcon,
-  Flex,
-  CrownIcon,
-  Text,
-  TeamPlayerIcon,
-  TrophyGoldIcon,
-} from '@pyroswap/uikit'
+import { BlockIcon, CheckmarkCircleIcon, Flex, CrownIcon, Text, TeamPlayerIcon, TrophyGoldIcon } from '@pyroswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { UserTradingInformationProps } from '../../types'
 import { useCompetitionCakeRewards, getRewardGroupAchievements } from '../../helpers'

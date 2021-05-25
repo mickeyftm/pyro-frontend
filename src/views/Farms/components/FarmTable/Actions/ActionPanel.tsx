@@ -146,10 +146,8 @@ const ActionPanel: React.FunctionComponent<ActionPanelProps> = ({
     quoteTokenAddress: quoteToken.address,
     tokenAddress: token.address,
   })
+  // eslint-disable-next-line
   const harvestLockup = farm.harvestLockup
-  const lpAddress = farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]
-  const bsc = `https://bscscan.com/address/${lpAddress}`
-  const info = `https://pancakeswap.info/pair/${lpAddress}`
 
   return (
     <Container expanded={expanded}>

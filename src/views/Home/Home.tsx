@@ -112,9 +112,7 @@ const Home: React.FC = () => {
 
         <CTACards>
           <EarnAPRCard />
-
         </CTACards>
-
       </div>
     </Page>
   )

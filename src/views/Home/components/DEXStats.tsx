@@ -40,7 +40,6 @@ const CakeStats = () => {
           <Text fontSize="14px">{t('24H Volume')}</Text>
           <CardValue fontSize="14px" decimals={0} value={burnedBalance} />
         </Row>
-
       </CardBody>
     </StyledCakeStats>
   )

@@ -92,6 +92,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, account }
   const lpLabel = farm.lpSymbol && farm.lpSymbol.toUpperCase().replace('PANCAKE', '')
   const earnLabel = farm.dual ? farm.dual.earnLabel : 'PYRO'
   const noDepositFee = '0%'
+  // eslint-disable-next-line
   const harvestLockup = farm.harvestLockup
 
   const farmAPR = farm.apr && farm.apr.toLocaleString('en-US', { maximumFractionDigits: 2 })
@@ -135,11 +136,11 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, account }
       </Flex>
       <Flex justifyContent="space-between">
         <Text>{t('Deposit Fee')}:</Text>
-        <Text bold>{(noDepositFee)}</Text>
+        <Text bold>{noDepositFee}</Text>
       </Flex>
       <Flex justifyContent="space-between">
         <Text>{t('Harvest Lockup')}:</Text>
-        <Text bold>{(harvestLockup)}</Text>
+        <Text bold>{harvestLockup}</Text>
       </Flex>
       <CardActionsContainer farm={farm} account={account} addLiquidityUrl={addLiquidityUrl} />
       <Divider />
