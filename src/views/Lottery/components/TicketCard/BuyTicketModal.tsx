@@ -1,7 +1,7 @@
 import BigNumber from 'bignumber.js'
 import React, { useCallback, useMemo, useState } from 'react'
 import styled from 'styled-components'
-import { Button, Modal } from '@pyroswap-libs/uikit'
+import { Button, Modal } from '@pyroswap/uikit'
 import { getBalanceNumber, getFullDisplayBalance } from 'utils/formatBalance'
 import TicketInput from 'components/TicketInput'
 import ModalActions from 'components/ModalActions'
@@ -76,16 +76,16 @@ const BuyTicketModal: React.FC<BuyTicketModalProps> = ({ max, onDismiss }) => {
         onChange={handleChange}
         max={fullBalance}
         symbol={t('Ticket').toUpperCase()}
-        availableSymbol="CAKE"
+        availableSymbol="PYRO"
       />
       <div>
-        <Tips>{t('1 Ticket = %lotteryPrice% CAKE', { lotteryPrice: LOTTERY_TICKET_PRICE })}</Tips>
+        <Tips>{t('1 Ticket = %lotteryPrice% PYRO', { lotteryPrice: LOTTERY_TICKET_PRICE })}</Tips>
       </div>
       <div>
         <Announce>
-          {t('Ticket purchases are final. Your CAKE cannot be returned to you after buying tickets.')}
+          {t('Ticket purchases are final. Your PYRO cannot be returned to you after buying tickets.')}
         </Announce>
-        <Final>{t('You will spend: %num% CAKE', { num: cakeCosts(val) })}</Final>
+        <Final>{t('You will spend: %num% PYRO', { num: cakeCosts(val) })}</Final>
       </div>
       <ModalActions>
         <Button width="100%" variant="secondary" onClick={onDismiss}>

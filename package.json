@@ -1,5 +1,5 @@
 {
-  "name": "pancake-frontend",
+  "name": "pyro-frontend",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -34,8 +34,7 @@
   "dependencies": {
     "@binance-chain/bsc-connector": "^1.0.0",
     "@ethersproject/abi": "^5.1.2",
-    "@pyroswap/pyro-uikit": "^0.32.2",
-    "@pyroswap-libs/uikit": "pyroswap/pyro-uikit",
+    "@pyroswap/uikit": "^0.36.6",
     "@reduxjs/toolkit": "^1.5.0",
     "@types/react": "^17.0.5",
     "@types/react-dom": "^17.0.4",
@@ -74,7 +73,7 @@
   "devDependencies": {
     "@commitlint/cli": "^12.1.1",
     "@commitlint/config-conventional": "^12.1.1",
-    "@pancakeswap/eslint-config-pancake": "^1.1.0",
+    "@pyroswap/eslint-config-pyro": "^1.1.0",
     "@types/jest": "^26.0.23",
     "@types/react-redux": "^7.1.16",
     "@types/react-transition-group": "^4.4.1",

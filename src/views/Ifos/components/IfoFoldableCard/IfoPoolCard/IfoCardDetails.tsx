@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, Flex, Box } from '@pyroswap-libs/uikit'
+import { Text, Flex, Box } from '@pyroswap/uikit'
 import { PublicIfoData } from 'hooks/ifo/types'
 import { useTranslation } from 'contexts/Localization'
 import { Ifo, PoolIds } from 'config/constants/types'

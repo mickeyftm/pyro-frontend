@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import styled, { css } from 'styled-components'
-import { ArrowDropDownIcon, Text } from '@pyroswap-libs/uikit'
+import { ArrowDropDownIcon, Text } from '@pyroswap/uikit'
 
 const DropDownHeader = styled.div`
   width: 100%;

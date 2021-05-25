@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react'
 import { useTranslation } from 'contexts/Localization'
-import { Input } from '@pyroswap-libs/uikit'
+import { Input } from '@pyroswap/uikit'
 import styled from 'styled-components'
 import debounce from 'lodash/debounce'
 

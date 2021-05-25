@@ -13,7 +13,7 @@ import {
   useModal,
   Box,
   useTooltip,
-} from '@pyroswap-libs/uikit'
+} from '@pyroswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { getBalanceNumber } from 'utils/formatBalance'
 import { useCakeVault, usePriceCakeBusd } from 'state/hooks'

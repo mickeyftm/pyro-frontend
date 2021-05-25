@@ -1,5 +1,5 @@
 import React from 'react'
-import { ToastContainer } from '@pyroswap-libs/uikit'
+import { ToastContainer } from '@pyroswap/uikit'
 import useToast from 'hooks/useToast'
 
 const ToastListener = () => {

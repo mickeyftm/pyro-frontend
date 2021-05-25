@@ -1,4 +1,4 @@
-import { Toast } from '@pyroswap-libs/uikit'
+import { Toast } from '@pyroswap/uikit'
 
 type ToastSignature = (title: Toast['title'], description?: Toast['description']) => void
 

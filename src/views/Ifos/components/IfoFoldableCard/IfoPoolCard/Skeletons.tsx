@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Skeleton } from '@pyroswap-libs/uikit'
+import { Flex, Skeleton } from '@pyroswap/uikit'
 
 export const SkeletonCardActions = () => {
   return <Skeleton height="48px" />

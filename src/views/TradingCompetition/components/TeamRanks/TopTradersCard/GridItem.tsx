@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading, Text, Flex } from '@pyroswap-libs/uikit'
+import { Heading, Text, Flex } from '@pyroswap/uikit'
 import styled from 'styled-components'
 import { LeaderboardDataItem } from '../../../types'
 import { localiseTradingVolume, accountEllipsis } from '../../../helpers'

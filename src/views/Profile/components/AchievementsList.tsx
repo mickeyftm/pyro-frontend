@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Flex, Heading } from '@pyroswap-libs/uikit'
+import { Flex, Heading } from '@pyroswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { useAchievements } from 'state/hooks'
 import AchievementCard from './AchievementCard'

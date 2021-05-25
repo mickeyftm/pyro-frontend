@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Heading, Text, BaseLayout } from '@pyroswap-libs/uikit'
+import { Heading, Text, BaseLayout } from '@pyroswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import Page from 'components/layout/Page'
 import FarmStakingCard from 'views/Home/components/FarmStakingCard'
@@ -25,8 +25,8 @@ const Hero = styled.div`
   text-align: center;
 
   ${({ theme }) => theme.mediaQueries.lg} {
-    background-image: url('/images/pan-bg2.svg'), url('/images/pan-bg.svg');
-    background-position: left center, right center;
+    background-image: url('/images/bonfire.gif');
+    background-position: left center;
     height: 165px;
     padding-top: 0;
   }
@@ -93,7 +93,7 @@ const Home: React.FC = () => {
         <Heading as="h1" scale="xl" mb="24px" color="secondary">
           {t('PyroSwap')}
         </Heading>
-        <Text>{t('The #1 AMM and yield farm on Arbitrum.')}</Text>
+        <Text>{t('The First Automatic Liquidity Acquisition Yield Farm & AMM on Arbitrum.')}</Text>
       </Hero>
       <div>
         <Cards>

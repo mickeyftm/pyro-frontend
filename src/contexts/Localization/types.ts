@@ -1,5 +1,5 @@
 import { ReactText } from 'react'
-import { Language } from '@pyroswap-libs/uikit'
+import { Language } from '@pyroswap/uikit'
 
 export type ContextData = {
   [key: string]: ReactText

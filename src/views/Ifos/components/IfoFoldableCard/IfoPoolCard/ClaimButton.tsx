@@ -1,6 +1,6 @@
 import React from 'react'
 import { useWeb3React } from '@web3-react/core'
-import { AutoRenewIcon, Button } from '@pyroswap-libs/uikit'
+import { AutoRenewIcon, Button } from '@pyroswap/uikit'
 import { PoolIds } from 'config/constants/types'
 import { WalletIfoData } from 'hooks/ifo/types'
 import { useTranslation } from 'contexts/Localization'

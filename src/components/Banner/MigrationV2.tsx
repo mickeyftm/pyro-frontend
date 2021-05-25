@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, Flex, Box, ErrorIcon, Button } from '@pyroswap-libs/uikit'
+import { Text, Flex, Box, ErrorIcon, Button } from '@pyroswap/uikit'
 import Banner from './Banner'
 
 const MigrationV2 = () => {

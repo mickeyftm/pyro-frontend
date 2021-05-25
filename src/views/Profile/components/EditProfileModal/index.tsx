@@ -1,5 +1,5 @@
 import React from 'react'
-import { InjectedModalProps, Modal } from '@pyroswap-libs/uikit'
+import { InjectedModalProps, Modal } from '@pyroswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import useEditProfile, { Views } from './reducer'
 import StartView from './StartView'

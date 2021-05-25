@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Card, CardBody, CardHeader, Heading, Text, Flex } from '@pyroswap-libs/uikit'
+import { Card, CardBody, CardHeader, Heading, Text, Flex } from '@pyroswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import FoldableText from 'components/FoldableText'
 

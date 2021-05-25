@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import { useCountUp } from 'react-countup'
-import { Text } from '@pyroswap-libs/uikit'
+import { Text } from '@pyroswap/uikit'
 
 export interface CardValueProps {
   value: number

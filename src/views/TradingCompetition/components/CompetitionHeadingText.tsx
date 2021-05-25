@@ -1,4 +1,4 @@
-import { Heading } from '@pyroswap-libs/uikit'
+import { Heading } from '@pyroswap/uikit'
 import styled, { DefaultTheme } from 'styled-components'
 
 const H1SizeStyles = (theme: DefaultTheme) => `

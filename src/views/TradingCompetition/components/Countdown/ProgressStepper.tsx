@@ -1,7 +1,7 @@
 import React from 'react'
 import _uniqueId from 'lodash/uniqueId'
 import styled from 'styled-components'
-import { Flex } from '@pyroswap-libs/uikit'
+import { Flex } from '@pyroswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { CountdownProps } from '../../types'
 import Step from './Step'

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading, Text } from '@pyroswap-libs/uikit'
+import { Heading, Text } from '@pyroswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import SecondaryCard from './SecondaryCard'
 import CardContent from './CardContent'

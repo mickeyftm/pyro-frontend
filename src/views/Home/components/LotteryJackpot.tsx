@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text } from '@pyroswap-libs/uikit'
+import { Text } from '@pyroswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 
 const LotteryJackpot = () => {

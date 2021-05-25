@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Card, Radio } from '@pyroswap-libs/uikit'
+import { Card, Radio } from '@pyroswap/uikit'
 
 interface SelectionCardProps {
   name: string

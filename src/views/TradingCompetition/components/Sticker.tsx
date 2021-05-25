@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Flex } from '@pyroswap-libs/uikit'
+import { Flex } from '@pyroswap/uikit'
 
 interface StickerProps {
   backgroundColor?: string

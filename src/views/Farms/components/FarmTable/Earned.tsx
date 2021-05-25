@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Skeleton } from '@pyroswap-libs/uikit'
+import { Skeleton } from '@pyroswap/uikit'
 
 export interface EarnedProps {
   earnings: number

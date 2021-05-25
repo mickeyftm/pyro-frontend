@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Heading, Card, CardBody, Flex, ArrowForwardIcon } from '@pyroswap-libs/uikit'
+import { Heading, Card, CardBody, Flex, ArrowForwardIcon } from '@pyroswap/uikit'
 import { NavLink } from 'react-router-dom'
 import { useTranslation } from 'contexts/Localization'
 

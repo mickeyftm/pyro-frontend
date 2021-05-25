@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { BaseLayout } from '@pyroswap-libs/uikit'
+import { BaseLayout } from '@pyroswap/uikit'
 import PastLotteryRoundViewer from './components/PastLotteryRoundViewer'
 import PastDrawsHistoryCard from './components/PastDrawsHistory/PastDrawsHistoryCard'
 import ClaimPrizesCard from './components/ClaimPrizesCard'

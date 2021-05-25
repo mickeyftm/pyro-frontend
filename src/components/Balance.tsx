@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import CountUp from 'react-countup'
-import { Text, TextProps } from '@pyroswap-libs/uikit'
+import { Text, TextProps } from '@pyroswap/uikit'
 
 interface BalanceProps extends TextProps {
   value: number

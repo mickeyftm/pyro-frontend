@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Flex } from '@pyroswap-libs/uikit'
+import { Flex } from '@pyroswap/uikit'
 import { RibbonProps } from '../../types'
 import Ribbon from '../Ribbon'
 

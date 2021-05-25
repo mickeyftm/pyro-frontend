@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Button, Heading, Text, LogoIcon } from '@pyroswap-libs/uikit'
+import { Button, Heading, Text, LogoIcon } from '@pyroswap/uikit'
 import Page from 'components/layout/Page'
 import { useTranslation } from 'contexts/Localization'
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { BunnyPlaceholderIcon, Flex, Heading } from '@pyroswap-libs/uikit'
+import { BunnyPlaceholderIcon, Flex, Heading } from '@pyroswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 
 interface ComingSoonProps {

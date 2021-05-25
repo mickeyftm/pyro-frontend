@@ -55,6 +55,7 @@ export interface FarmConfig {
   lpAddresses: Address
   token: Token
   quoteToken: Token
+  harvestLockup: string
   multiplier?: string
   isCommunity?: boolean
   dual?: {

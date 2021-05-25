@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { Text, Input, Button } from '@pyroswap-libs/uikit'
+import { Text, Input, Button } from '@pyroswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 
 interface PastLotterySearcherProps {

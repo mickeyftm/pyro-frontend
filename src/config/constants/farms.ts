@@ -14,6 +14,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.syrup,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 251,
@@ -24,6 +25,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.cake,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 252,
@@ -34,6 +36,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.busd,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   /**
    * V3 by order of release (some may be out of PID order due to multiplier boost)
@@ -47,6 +50,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.cyc,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 387,
@@ -57,6 +61,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.xend,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 296,
@@ -67,6 +72,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.hget,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 386,
@@ -77,6 +83,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.hotcross,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 385,
@@ -87,6 +94,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.rfox,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 384,
@@ -97,6 +105,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.wmass,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 383,
@@ -107,6 +116,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.ubxt,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 381,
@@ -117,6 +127,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.btr,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 380,
@@ -127,6 +138,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.τdoge,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 379,
@@ -137,6 +149,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.pmon,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 378,
@@ -147,6 +160,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.one,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 377,
@@ -157,6 +171,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.fine,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 376,
@@ -167,6 +182,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.doge,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 310,
@@ -177,6 +193,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bmxx,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 375,
@@ -187,6 +204,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.oin,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 374,
@@ -197,6 +215,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.hyfi,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 373,
@@ -207,6 +226,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.kun,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 372,
@@ -217,6 +237,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.kun,
     quoteToken: tokens.qsd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 371,
@@ -227,6 +248,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.math,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 370,
@@ -237,6 +259,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.mcoin,
     quoteToken: tokens.ust,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 369,
@@ -247,6 +270,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.win,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 368,
@@ -257,6 +281,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.trx,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 367,
@@ -267,6 +292,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.btt,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 366,
@@ -277,6 +303,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.pnt,
     quoteToken: tokens.pbtc,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 311,
@@ -287,6 +314,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.xmark,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 365,
@@ -297,6 +325,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.btcb,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 364,
@@ -307,6 +336,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.lmt,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 363,
@@ -317,6 +347,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.dfd,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 362,
@@ -327,6 +358,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.alpaca,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 361,
@@ -337,6 +369,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.τbtc,
     quoteToken: tokens.btcb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 304,
@@ -347,6 +380,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.swingby,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 360,
@@ -357,6 +391,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.xed,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 359,
@@ -367,6 +402,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.hakka,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 358,
@@ -377,6 +413,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.cgg,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 357,
@@ -387,6 +424,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.suter,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 356,
@@ -397,6 +435,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.broobee,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 355,
@@ -407,6 +446,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.hzn,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 354,
@@ -417,6 +457,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.alpa,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 353,
@@ -427,6 +468,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.perl,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 352,
@@ -437,6 +479,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.tlm,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 351,
@@ -447,6 +490,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.jgn,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 350,
@@ -457,6 +501,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.eps,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 349,
@@ -467,6 +512,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.arpa,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 348,
@@ -477,6 +523,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.itam,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 347,
@@ -487,6 +534,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bondly,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 346,
@@ -497,6 +545,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.tko,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 345,
@@ -507,6 +556,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.apys,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 344,
@@ -517,6 +567,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.hoo,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 343,
@@ -527,6 +578,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.oddz,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 342,
@@ -537,6 +589,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.easy,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 341,
@@ -547,6 +600,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.nrv,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 340,
@@ -557,6 +611,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.dego,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 339,
@@ -567,6 +622,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.gum,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 338,
@@ -577,6 +633,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.pbtc,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 337,
@@ -587,6 +644,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.dft,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 336,
@@ -597,6 +655,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.swth,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 335,
@@ -607,6 +666,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.lien,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 334,
@@ -617,6 +677,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.zil,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 333,
@@ -627,6 +688,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.pcws,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 332,
@@ -637,6 +699,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bbadger,
     quoteToken: tokens.btcb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 331,
@@ -647,6 +710,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bdigg,
     quoteToken: tokens.btcb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 330,
@@ -657,6 +721,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.lto,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 329,
@@ -667,6 +732,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.mir,
     quoteToken: tokens.ust,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 328,
@@ -677,6 +743,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.trade,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 327,
@@ -687,6 +754,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.dusk,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 326,
@@ -697,6 +765,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bifi,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 325,
@@ -707,6 +776,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.txl,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 324,
@@ -717,6 +787,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.cos,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 323,
@@ -727,6 +798,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bunny,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 322,
@@ -737,6 +809,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.alice,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 321,
@@ -747,6 +820,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.for,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 320,
@@ -757,6 +831,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bux,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 319,
@@ -767,6 +842,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.nuls,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 318,
@@ -777,6 +853,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.belt,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 317,
@@ -787,6 +864,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.ramp,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 316,
@@ -797,6 +875,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bfi,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 315,
@@ -807,6 +886,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.dexe,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 314,
@@ -817,6 +897,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bel,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 313,
@@ -827,6 +908,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.tpt,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 312,
@@ -837,6 +919,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.watch,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 309,
@@ -847,6 +930,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.iotx,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 308,
@@ -857,6 +941,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bor,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 307,
@@ -867,6 +952,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bopen,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 306,
@@ -877,6 +963,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.sushi,
     quoteToken: tokens.eth,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 305,
@@ -887,6 +974,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.dodo,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 303,
@@ -897,6 +985,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bry,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 302,
@@ -907,6 +996,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.zee,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 301,
@@ -917,6 +1007,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.swgb,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 300,
@@ -927,6 +1018,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.comp,
     quoteToken: tokens.eth,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 299,
@@ -937,6 +1029,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.sfp,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 298,
@@ -947,6 +1040,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.lina,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 297,
@@ -957,6 +1051,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.lit,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 295,
@@ -967,6 +1062,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bdo,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 294,
@@ -977,6 +1073,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.egld,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 293,
@@ -987,6 +1084,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.ust,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 292,
@@ -997,6 +1095,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.mamzn,
     quoteToken: tokens.ust,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 291,
@@ -1007,6 +1106,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.mgoogl,
     quoteToken: tokens.ust,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 290,
@@ -1017,6 +1117,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.mnflx,
     quoteToken: tokens.ust,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 289,
@@ -1027,6 +1128,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.mtsla,
     quoteToken: tokens.ust,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 288,
@@ -1037,6 +1139,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.wsote,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 287,
@@ -1047,6 +1150,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.front,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 286,
@@ -1057,6 +1161,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.helmet,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 285,
@@ -1067,6 +1172,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.btcst,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 284,
@@ -1077,6 +1183,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.ltc,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 283,
@@ -1087,6 +1194,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.usdc,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 282,
@@ -1097,6 +1205,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.dai,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 281,
@@ -1107,6 +1216,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bscx,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 280,
@@ -1117,6 +1227,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.ten,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 279,
@@ -1127,6 +1238,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.balbt,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 278,
@@ -1137,6 +1249,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.reef,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 277,
@@ -1147,6 +1260,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.ditto,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 276,
@@ -1157,6 +1271,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.vai,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 275,
@@ -1167,6 +1282,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.blink,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 274,
@@ -1177,6 +1293,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.unfi,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 273,
@@ -1187,6 +1304,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.hard,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 272,
@@ -1197,6 +1315,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.ctk,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 271,
@@ -1207,6 +1326,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.sxp,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 270,
@@ -1217,6 +1337,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.inj,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 269,
@@ -1227,6 +1348,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.fil,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 268,
@@ -1237,6 +1359,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.uni,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 267,
@@ -1247,6 +1370,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.yfi,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 266,
@@ -1257,6 +1381,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.atom,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 265,
@@ -1267,6 +1392,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.xrp,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 264,
@@ -1277,6 +1403,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.usdt,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 263,
@@ -1287,6 +1414,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.alpha,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 262,
@@ -1297,6 +1425,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.btcb,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 261,
@@ -1307,6 +1436,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.eth,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 260,
@@ -1317,6 +1447,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.xvs,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 259,
@@ -1327,6 +1458,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.twt,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 258,
@@ -1337,6 +1469,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.usdt,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 257,
@@ -1347,6 +1480,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.link,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 256,
@@ -1357,6 +1491,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.eos,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 255,
@@ -1367,6 +1502,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.dot,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 254,
@@ -1377,6 +1513,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.band,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 253,
@@ -1387,6 +1524,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.ada,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   /**
    * V2 farms, set to be removed once unstaked
@@ -1400,6 +1538,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.cake,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 250,
@@ -1410,6 +1549,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.τbtc,
     quoteToken: tokens.btcb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 193,
@@ -1420,6 +1560,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.swingby,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 249,
@@ -1430,6 +1571,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.xed,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 248,
@@ -1440,6 +1582,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.hakka,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 247,
@@ -1450,6 +1593,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.cgg,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 246,
@@ -1460,6 +1604,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.suter,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 245,
@@ -1470,6 +1615,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.broobee,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 244,
@@ -1480,6 +1626,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.hzn,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 243,
@@ -1490,6 +1637,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.alpa,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 242,
@@ -1500,6 +1648,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.perl,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 241,
@@ -1510,6 +1659,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.tlm,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 240,
@@ -1520,6 +1670,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.jgn,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 239,
@@ -1530,6 +1681,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.eps,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 238,
@@ -1540,6 +1692,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.arpa,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 237,
@@ -1550,6 +1703,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.itam,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 236,
@@ -1560,6 +1714,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bondly,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 235,
@@ -1570,6 +1725,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.tko,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 234,
@@ -1580,6 +1736,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.apys,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 233,
@@ -1590,6 +1747,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.hoo,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 232,
@@ -1600,6 +1758,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.oddz,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 231,
@@ -1610,6 +1769,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.easy,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 230,
@@ -1620,6 +1780,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.nrv,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 229,
@@ -1630,6 +1791,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.dego,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 228,
@@ -1640,6 +1802,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.gum,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 227,
@@ -1650,6 +1813,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.pbtc,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 226,
@@ -1660,6 +1824,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.dft,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 225,
@@ -1670,6 +1835,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.swth,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 224,
@@ -1680,6 +1846,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.lien,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 223,
@@ -1690,6 +1857,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.zil,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 222,
@@ -1700,6 +1868,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.pcws,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 221,
@@ -1710,6 +1879,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bbadger,
     quoteToken: tokens.btcb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 220,
@@ -1720,6 +1890,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bdigg,
     quoteToken: tokens.btcb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 219,
@@ -1730,6 +1901,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.lto,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 218,
@@ -1740,6 +1912,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.mir,
     quoteToken: tokens.ust,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 217,
@@ -1750,6 +1923,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.trade,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 216,
@@ -1760,6 +1934,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.dusk,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 215,
@@ -1770,6 +1945,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bifi,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 214,
@@ -1780,6 +1956,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.txl,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 213,
@@ -1790,6 +1967,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.cos,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 212,
@@ -1800,6 +1978,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bunny,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 211,
@@ -1810,6 +1989,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.alice,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 210,
@@ -1820,6 +2000,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.for,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 209,
@@ -1830,6 +2011,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bux,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 208,
@@ -1840,6 +2022,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.nuls,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 207,
@@ -1850,6 +2033,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.belt,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 206,
@@ -1860,6 +2044,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.ramp,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 205,
@@ -1870,6 +2055,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bfi,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 204,
@@ -1880,6 +2066,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.dexe,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 203,
@@ -1890,6 +2077,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bel,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 202,
@@ -1900,6 +2088,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.tpt,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 201,
@@ -1910,6 +2099,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.watch,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 200,
@@ -1920,6 +2110,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.xmark,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 199,
@@ -1930,6 +2121,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bmxx,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 198,
@@ -1940,6 +2132,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.iotx,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 197,
@@ -1950,6 +2143,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bor,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 196,
@@ -1960,6 +2154,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bopen,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 195,
@@ -1970,6 +2165,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.sushi,
     quoteToken: tokens.eth,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 194,
@@ -1980,6 +2176,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.dodo,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 192,
@@ -1990,6 +2187,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bry,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 191,
@@ -2000,6 +2198,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.zee,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 190,
@@ -2010,6 +2209,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.swgb,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 189,
@@ -2020,6 +2220,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.comp,
     quoteToken: tokens.eth,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 188,
@@ -2030,6 +2231,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.sfp,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 187,
@@ -2040,6 +2242,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.lina,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 186,
@@ -2050,6 +2253,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.lit,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 185,
@@ -2060,6 +2264,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.hget,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 184,
@@ -2070,6 +2275,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bdo,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 183,
@@ -2080,6 +2286,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.egld,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 182,
@@ -2090,6 +2297,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.ust,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 181,
@@ -2100,6 +2308,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.mamzn,
     quoteToken: tokens.ust,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 180,
@@ -2110,6 +2319,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.mgoogl,
     quoteToken: tokens.ust,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 179,
@@ -2120,6 +2330,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.mnflx,
     quoteToken: tokens.ust,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 178,
@@ -2130,6 +2341,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.mtsla,
     quoteToken: tokens.ust,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 177,
@@ -2140,6 +2352,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.wsote,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 176,
@@ -2150,6 +2363,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.front,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 175,
@@ -2160,6 +2374,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.helmet,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 174,
@@ -2170,6 +2385,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.btcst,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 173,
@@ -2180,6 +2396,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.ltc,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 172,
@@ -2190,6 +2407,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.usdc,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 171,
@@ -2200,6 +2418,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.dai,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 170,
@@ -2210,6 +2429,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bscx,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 169,
@@ -2220,6 +2440,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.ten,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 168,
@@ -2230,6 +2451,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.balbt,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 167,
@@ -2240,6 +2462,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.reef,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 166,
@@ -2250,6 +2473,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.ditto,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 165,
@@ -2260,6 +2484,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.vai,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 164,
@@ -2270,6 +2495,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.blink,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 163,
@@ -2280,6 +2506,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.unfi,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 162,
@@ -2290,6 +2517,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.hard,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 161,
@@ -2300,6 +2528,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.ctk,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 160,
@@ -2310,6 +2539,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.sxp,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 159,
@@ -2320,6 +2550,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.inj,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 158,
@@ -2330,6 +2561,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.fil,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 157,
@@ -2340,6 +2572,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.uni,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 156,
@@ -2350,6 +2583,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.yfi,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 155,
@@ -2360,6 +2594,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.yfii,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 154,
@@ -2370,6 +2605,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.atom,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 153,
@@ -2380,6 +2616,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.xrp,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 152,
@@ -2390,6 +2627,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.usdt,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 151,
@@ -2400,6 +2638,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.alpha,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 150,
@@ -2410,6 +2649,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.btcb,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 149,
@@ -2420,6 +2660,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.eth,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 148,
@@ -2430,6 +2671,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.xvs,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 147,
@@ -2440,6 +2682,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.twt,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 146,
@@ -2450,6 +2693,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.usdt,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 145,
@@ -2460,6 +2704,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.link,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 144,
@@ -2470,6 +2715,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.eos,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 143,
@@ -2480,6 +2726,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.dot,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 142,
@@ -2490,6 +2737,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.band,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 141,
@@ -2500,6 +2748,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.ada,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 140,
@@ -2510,6 +2759,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.busd,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   /**
    * All farms below here are from v1 and are to be set to 0x
@@ -2523,6 +2773,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.cake,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 136,
@@ -2533,6 +2784,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.τbtc,
     quoteToken: tokens.btcb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 76,
@@ -2543,6 +2795,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.swingby,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 135,
@@ -2553,6 +2806,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.xed,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 134,
@@ -2563,6 +2817,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.hakka,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 133,
@@ -2573,6 +2828,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.cgg,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 132,
@@ -2583,6 +2839,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.suter,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 131,
@@ -2593,6 +2850,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.broobee,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 130,
@@ -2603,6 +2861,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.hzn,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 129,
@@ -2613,6 +2872,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.alpa,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 128,
@@ -2623,6 +2883,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.perl,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 127,
@@ -2633,6 +2894,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.tlm,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 125,
@@ -2643,6 +2905,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.jgn,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 124,
@@ -2653,6 +2916,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.eps,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 123,
@@ -2663,6 +2927,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.arpa,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 122,
@@ -2673,6 +2938,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.itam,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 121,
@@ -2683,6 +2949,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bondly,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 120,
@@ -2693,6 +2960,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.tko,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 119,
@@ -2703,6 +2971,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.apys,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 118,
@@ -2713,6 +2982,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.hoo,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 117,
@@ -2723,6 +2993,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.oddz,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 116,
@@ -2733,6 +3004,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.easy,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 115,
@@ -2743,6 +3015,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.nrv,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 114,
@@ -2753,6 +3026,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.dego,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 113,
@@ -2763,6 +3037,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.gum,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 112,
@@ -2773,6 +3048,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.pbtc,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 111,
@@ -2783,6 +3059,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.dft,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 110,
@@ -2793,6 +3070,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.swth,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 109,
@@ -2803,6 +3081,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.lien,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 108,
@@ -2813,6 +3092,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.zil,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 107,
@@ -2823,6 +3103,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.pcws,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 106,
@@ -2833,6 +3114,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bbadger,
     quoteToken: tokens.btcb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 104,
@@ -2843,6 +3125,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bdigg,
     quoteToken: tokens.btcb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 103,
@@ -2853,6 +3136,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.lto,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 102,
@@ -2863,6 +3147,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.mir,
     quoteToken: tokens.ust,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 101,
@@ -2873,6 +3158,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.trade,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 100,
@@ -2883,6 +3169,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.dusk,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 99,
@@ -2893,6 +3180,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bifi,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 98,
@@ -2903,6 +3191,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.txl,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 97,
@@ -2913,6 +3202,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.cos,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 96,
@@ -2923,6 +3213,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bunny,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 95,
@@ -2933,6 +3224,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.alice,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 94,
@@ -2943,6 +3235,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.for,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 93,
@@ -2953,6 +3246,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bux,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 92,
@@ -2963,6 +3257,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.nuls,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 91,
@@ -2973,6 +3268,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.nuls,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 90,
@@ -2983,6 +3279,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.belt,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 89,
@@ -2993,6 +3290,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.ramp,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 88,
@@ -3003,6 +3301,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bfi,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 87,
@@ -3013,6 +3312,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.dexe,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 86,
@@ -3023,6 +3323,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bel,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 85,
@@ -3033,6 +3334,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.tpt,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 84,
@@ -3043,6 +3345,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.watch,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 83,
@@ -3053,6 +3356,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.xmark,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 82,
@@ -3063,6 +3367,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bmxx,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 81,
@@ -3073,6 +3378,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.iotx,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 80,
@@ -3083,6 +3389,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bor,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 79,
@@ -3093,6 +3400,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bopen,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 78,
@@ -3103,6 +3411,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.sushi,
     quoteToken: tokens.eth,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 77,
@@ -3113,6 +3422,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.dodo,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 75,
@@ -3123,6 +3433,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bry,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 74,
@@ -3133,6 +3444,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.zee,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 73,
@@ -3143,6 +3455,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.swgb,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 72,
@@ -3153,6 +3466,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.comp,
     quoteToken: tokens.eth,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 71,
@@ -3163,6 +3477,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.sfp,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 70,
@@ -3173,6 +3488,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.beth,
     quoteToken: tokens.eth,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 69,
@@ -3183,6 +3499,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.lina,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 68,
@@ -3193,6 +3510,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.lit,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 67,
@@ -3203,6 +3521,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.hget,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 66,
@@ -3213,6 +3532,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bdo,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 65,
@@ -3223,6 +3543,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.egld,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 63,
@@ -3233,6 +3554,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.ust,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 62,
@@ -3243,6 +3565,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.mamzn,
     quoteToken: tokens.ust,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 61,
@@ -3253,6 +3576,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.mgoogl,
     quoteToken: tokens.ust,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 60,
@@ -3263,6 +3587,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.mnflx,
     quoteToken: tokens.ust,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 59,
@@ -3273,6 +3598,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.mtsla,
     quoteToken: tokens.ust,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 58,
@@ -3283,6 +3609,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.wsote,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 57,
@@ -3293,6 +3620,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.front,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 56,
@@ -3303,6 +3631,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.helmet,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 55,
@@ -3313,6 +3642,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.btcst,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 54,
@@ -3323,6 +3653,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.ltc,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 53,
@@ -3333,6 +3664,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.usdc,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 52,
@@ -3343,6 +3675,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.dai,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 51,
@@ -3353,6 +3686,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bscx,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 50,
@@ -3363,6 +3697,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.ten,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 49,
@@ -3373,6 +3708,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.balbt,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 46,
@@ -3383,6 +3719,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.og,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 47,
@@ -3393,6 +3730,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.asr,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 48,
@@ -3403,6 +3741,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.atm,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 45,
@@ -3413,6 +3752,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.reef,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 44,
@@ -3423,6 +3763,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.ditto,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 43,
@@ -3433,6 +3774,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.juv,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 42,
@@ -3443,6 +3785,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.psg,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 39,
@@ -3453,6 +3796,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.unfi,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 41,
@@ -3463,6 +3807,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.vai,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 40,
@@ -3473,6 +3818,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.blink,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 37,
@@ -3483,6 +3829,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.hard,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 2,
@@ -3493,6 +3840,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.busd,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 3,
@@ -3503,6 +3851,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.ada,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 4,
@@ -3513,6 +3862,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.band,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 5,
@@ -3523,6 +3873,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.dot,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 6,
@@ -3533,6 +3884,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.eos,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 7,
@@ -3543,6 +3895,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.link,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 11,
@@ -3553,6 +3906,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.usdt,
     quoteToken: tokens.busd,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 12,
@@ -3563,6 +3917,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.twt,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 13,
@@ -3573,6 +3928,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.xvs,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 14,
@@ -3583,6 +3939,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.eth,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 15,
@@ -3593,6 +3950,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.btcb,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 16,
@@ -3603,6 +3961,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.alpha,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 17,
@@ -3613,6 +3972,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.usdt,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 18,
@@ -3623,6 +3983,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.xrp,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 19,
@@ -3633,6 +3994,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.atom,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 20,
@@ -3643,6 +4005,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.yfii,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 21,
@@ -3653,6 +4016,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.dai,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 22,
@@ -3663,6 +4027,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.xtz,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 23,
@@ -3673,6 +4038,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bch,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 24,
@@ -3683,6 +4049,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.yfi,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 25,
@@ -3693,6 +4060,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.uni,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 26,
@@ -3703,6 +4071,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.fil,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 27,
@@ -3713,6 +4082,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.inj,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 29,
@@ -3723,6 +4093,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.usdc,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 30,
@@ -3733,6 +4104,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.sxp,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 32,
@@ -3743,6 +4115,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.ctk,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 34,
@@ -3753,6 +4126,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.stax,
     quoteToken: tokens.cake,
+    harvestLockup: '2 Hours',
     isCommunity: true,
   },
   {
@@ -3764,6 +4138,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.nar,
     quoteToken: tokens.cake,
+    harvestLockup: '2 Hours',
     isCommunity: true,
   },
   {
@@ -3775,6 +4150,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.nya,
     quoteToken: tokens.cake,
+    harvestLockup: '2 Hours',
     isCommunity: true,
   },
   {
@@ -3786,6 +4162,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.broobee,
     quoteToken: tokens.cake,
+    harvestLockup: '2 Hours',
     isCommunity: true,
   },
   {
@@ -3797,6 +4174,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bake,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 9,
@@ -3807,6 +4185,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.burger,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
   {
     pid: 10,
@@ -3817,6 +4196,7 @@ const farms: FarmConfig[] = [
     },
     token: tokens.bake,
     quoteToken: tokens.wbnb,
+    harvestLockup: '2 Hours',
   },
 ]
 

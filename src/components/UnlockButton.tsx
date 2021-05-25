@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, useWalletModal } from '@pyroswap-libs/uikit'
+import { Button, useWalletModal } from '@pyroswap/uikit'
 import useAuth from 'hooks/useAuth'
 import { useTranslation } from 'contexts/Localization'
 

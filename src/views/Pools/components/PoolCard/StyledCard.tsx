@@ -1,5 +1,5 @@
 import styled, { css, keyframes } from 'styled-components'
-import { Card, Box } from '@pyroswap-libs/uikit'
+import { Card, Box } from '@pyroswap/uikit'
 
 const PromotedGradient = keyframes`
   0% {

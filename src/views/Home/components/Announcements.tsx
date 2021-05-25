@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardBody, Heading, Text } from '@pyroswap-libs/uikit'
+import { Card, CardBody, Heading, Text } from '@pyroswap/uikit'
 import styled from 'styled-components'
 import { Timeline } from 'react-twitter-widgets'
 import { getBalanceNumber } from 'utils/formatBalance'

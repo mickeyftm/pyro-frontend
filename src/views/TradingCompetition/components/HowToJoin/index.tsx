@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Text, Heading, Link } from '@pyroswap-libs/uikit'
+import { Flex, Text, Heading, Link } from '@pyroswap/uikit'
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'
 import HowToCard from './HowToCard'

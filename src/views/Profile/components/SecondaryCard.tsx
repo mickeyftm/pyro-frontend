@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Text } from '@pyroswap-libs/uikit'
+import { Text } from '@pyroswap/uikit'
 
 const SecondaryCard = styled(Text)`
   border: 2px solid ${({ theme }) => theme.colors.tertiary};

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Flex, Heading, Text } from '@pyroswap-libs/uikit'
+import { Flex, Heading, Text } from '@pyroswap/uikit'
 
 interface HeadingProps {
   valueToDisplay?: string

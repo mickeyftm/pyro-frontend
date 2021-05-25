@@ -1,5 +1,5 @@
 import styled, { DefaultTheme } from 'styled-components'
-import { CardHeader as UIKitCardHeader } from '@pyroswap-libs/uikit'
+import { CardHeader as UIKitCardHeader } from '@pyroswap/uikit'
 
 const getBackground = (theme: DefaultTheme) => {
   if (theme.isDark) {

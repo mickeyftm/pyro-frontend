@@ -1,5 +1,5 @@
 import React, { ElementType, ReactNode } from 'react'
-import { Flex, Heading, Text, TextProps } from '@pyroswap-libs/uikit'
+import { Flex, Heading, Text, TextProps } from '@pyroswap/uikit'
 import SecondaryCard from './SecondaryCard'
 
 interface StatBoxProps extends TextProps {

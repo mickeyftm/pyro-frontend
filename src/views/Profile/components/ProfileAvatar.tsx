@@ -1,5 +1,5 @@
 import React from 'react'
-import { NoProfileAvatarIcon } from '@pyroswap-libs/uikit'
+import { NoProfileAvatarIcon } from '@pyroswap/uikit'
 import { Profile } from 'state/types'
 import styled from 'styled-components'
 
