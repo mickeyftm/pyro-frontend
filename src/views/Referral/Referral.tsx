@@ -12,7 +12,7 @@ import TotalValueLockedCard from 'views/Home/components/TotalValueLockedCard'
 import EarnAPRCard from 'views/Home/components/EarnAPRCard'
 
 const Hero = styled.div`
-  
+
   background-repeat: no-repeat;
   background-position: top center;
   align-items: center;
@@ -84,7 +84,7 @@ const CTACards = styled(BaseLayout)`
   }
 `
 
-const Home: React.FC = () => {
+const Referral: React.FC = () => {
   const { t } = useTranslation()
 
   return (
@@ -118,4 +118,4 @@ const Home: React.FC = () => {
   )
 }
 
-export default Home
+export default Referral
