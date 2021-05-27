@@ -133,7 +133,7 @@ const HistoryChart: React.FC<HistoryChartProps> = ({ showLast }) => {
         ],
         xAxes: [
           {
-            ...axesStyles({ color: isDark ? '#FFFFFF' : '#452A7A', lineHeight: 1, prefix: '#' }),
+            ...axesStyles({ color: isDark ? '#FFFFFF' : '#7a2a2f', lineHeight: 1, prefix: '#' }),
           },
         ],
       },

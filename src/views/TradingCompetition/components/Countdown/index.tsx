@@ -13,7 +13,7 @@ import { GOLDGRADIENT } from '../Section/sectionStyles'
 const Wrapper = styled(Flex)`
   width: fit-content;
   height: fit-content;
-  background: linear-gradient(180deg, #7645d9 0%, #452a7a 100%);
+  background: linear-gradient(180deg, #db444c 0%, #7a2b31 100%);
   border: 1px solid #7645d9;
   box-sizing: border-box;
   border-radius: 0px 0px 24px 24px;
