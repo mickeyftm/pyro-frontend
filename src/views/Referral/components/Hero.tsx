@@ -60,9 +60,8 @@ const Hero = () => {
     <StyledHero>
       <StyledContainer>
         <LeftWrapper>
-          <Title>{t('PyroSwap Lottery!')}</Title>
-          <ComeBack>{t('Buy lottery tickets with Pyro')}</ComeBack>
-          <ComeBack>{t('Win if 2, 3 or 4 of your ticket numbers match!')}</ComeBack>
+          <Title>{t('PyroSwap Referral Program!')}</Title>
+          <ComeBack>{t('Share the referral link below to invite your friends and earn 1% of your friends earnings FOREVER!')}</ComeBack>
 
         </LeftWrapper>
 

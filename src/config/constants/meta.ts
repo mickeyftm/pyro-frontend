@@ -5,7 +5,7 @@ export const DEFAULT_META: PageMeta = {
   title: 'PyroSwap',
   description:
     'The First Automatic Liquidity Acquisition Yield Farm & AMM on Arbitrum! Earn PYRO through yield farming or win it in the Lottery',
-  image: 'https://pancakeswap.finance/images/banner.png',
+  image: 'https://pyroswap.com/images/banner.png',
 }
 
 export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {

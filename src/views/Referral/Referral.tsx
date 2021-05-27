@@ -1,36 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Heading, Text, BaseLayout } from '@pyroswap/uikit'
-import { useTranslation } from 'contexts/Localization'
+import { BaseLayout } from '@pyroswap/uikit'
 import Page from 'components/layout/Page'
-import FarmStakingCard from 'views/Home/components/FarmStakingCard'
-import LotteryCard from 'views/Home/components/LotteryCard'
-import CakeStats from 'views/Home/components/CakeStats'
-import DEXStats from 'views/Home/components/DEXStats'
-import Announcements from 'views/Home/components/Announcements'
-import TotalValueLockedCard from 'views/Home/components/TotalValueLockedCard'
-import EarnAPRCard from 'views/Home/components/EarnAPRCard'
+import TotalReferrals from 'views/Referral/components/TotalReferrals'
+import TotalCommissions from 'views/Referral/components/TotalCommissions'
+import ReferralLink from 'views/Referral/components/ReferralLink'
+import Hero from './components/Hero'
 
-const Hero = styled.div`
 
-  background-repeat: no-repeat;
-  background-position: top center;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: auto;
-  margin-bottom: 32px;
-  padding-top: 15px;
-  text-align: center;
-
-  ${({ theme }) => theme.mediaQueries.lg} {
-    background-image: url('/images/bonfire.gif');
-    background-position: left center;
-    height: 165px;
-    padding-top: 0;
-  }
-`
 
 const Cards = styled(BaseLayout)`
   align-items: stretch;
@@ -59,62 +36,27 @@ const Cards = styled(BaseLayout)`
   }
 `
 
-const CTACards = styled(BaseLayout)`
-  align-items: start;
-  margin-bottom: 24px;
-  grid-gap: 24px;
-
-  & > div {
-    grid-column: span 6;
-  }
-
-  ${({ theme }) => theme.mediaQueries.sm} {
-    & > div {
-      grid-column: span 8;
-    }
-  }
-
-  ${({ theme }) => theme.mediaQueries.lg} {
-    margin-bottom: 32px;
-    grid-gap: 32px;
-
-    & > div {
-      grid-column: span 4;
-    }
-  }
-`
 
 const Referral: React.FC = () => {
-  const { t } = useTranslation()
 
   return (
+    <>
+    <Hero />
     <Page>
-      <Hero>
-        <Heading as="h1" scale="xl" mb="24px" color="secondary">
-          {t('PyroSwap')}
-        </Heading>
-        <Text>{t('The First Automatic Liquidity Acquisition Yield Farm & AMM on Arbitrum.')}</Text>
-      </Hero>
+
       <div>
         <Cards>
-          <FarmStakingCard />
-          <LotteryCard />
-        </Cards>
-        <Cards>
-          <TotalValueLockedCard />
-          <DEXStats />
+          <TotalReferrals />
+          <TotalCommissions />
         </Cards>
 
-        <Cards>
-          <Announcements />
-          <CakeStats />
-        </Cards>
+          <ReferralLink />
 
-        <CTACards>
-          <EarnAPRCard />
-        </CTACards>
+
+
       </div>
     </Page>
+    </>
   )
 }
 

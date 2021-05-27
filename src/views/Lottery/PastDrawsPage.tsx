@@ -31,11 +31,6 @@ const SecondCardColumnWrapper = styled.div<{ isAWin?: boolean }>`
   flex-direction: column;
 `
 
-const BunnyImageWrapper = styled.div`
-  display: flex;
-  margin-top: 32px;
-  justify-content: center;
-`
 
 const PastDrawsPage: React.FC = () => {
   return (
@@ -45,9 +40,6 @@ const PastDrawsPage: React.FC = () => {
         <PastLotteryRoundViewer />
         <SecondCardColumnWrapper>
           <PastDrawsHistoryCard />
-          <BunnyImageWrapper>
-            <img src="/images/pancake-lottery-bunny.png" alt="lottery bunny" />
-          </BunnyImageWrapper>
         </SecondCardColumnWrapper>
       </Cards>
     </>

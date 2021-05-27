@@ -23,7 +23,7 @@ const MigrationV2 = () => {
         <Text color="white" mb="16px">
           All LPs will be migrated to a new, upgraded contract, over several hours starting from now.
         </Text>
-        <Button as="a" href="https://v1exchange.pancakeswap.finance/#/migrate">
+        <Button as="a" href="https://v1dex.pyroswap.com/#/migrate">
           Migrate Now
         </Button>
       </Box>

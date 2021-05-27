@@ -13,19 +13,11 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     items: [
       {
         label: t('Exchange'),
-        href: 'https://exchange.pancakeswap.finance/#/swap',
+        href: 'https://dex.pyroswap.com/#/swap',
       },
       {
         label: t('Liquidity'),
-        href: 'https://exchange.pancakeswap.finance/#/pool',
-      },
-      {
-        label: t('LP Migration'),
-        href: 'https://v1exchange.pancakeswap.finance/#/migrate',
-      },
-      {
-        label: t('V1 Liquidity (Old)'),
-        href: 'https://v1exchange.pancakeswap.finance/#/pool',
+        href: 'https://dex.pyroswap.com/#/pool',
       },
     ],
   },
@@ -56,19 +48,15 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     items: [
       {
         label: t('Overview'),
-        href: 'https://pancakeswap.info',
+        href: 'https://pyroswap.info',
       },
       {
         label: t('Tokens'),
-        href: 'https://pancakeswap.info/tokens',
+        href: 'https://pyroswap.info/tokens',
       },
       {
         label: t('Pairs'),
-        href: 'https://pancakeswap.info/pairs',
-      },
-      {
-        label: t('Accounts'),
-        href: 'https://pancakeswap.info/accounts',
+        href: 'https://pyroswap.info/pairs',
       },
     ],
   },
@@ -83,11 +71,11 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     items: [
       {
         label: t('Contact'),
-        href: 'https://docs.pancakeswap.finance/contact-us',
+        href: 'https://docs.pyroswap.com/contact-us',
       },
       {
         label: t('Voting'),
-        href: 'https://voting.pancakeswap.finance',
+        href: 'https://voting.pyroswap.com',
       },
       {
         label: t('Github'),
@@ -95,7 +83,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
       },
       {
         label: t('Docs'),
-        href: 'https://docs.pancakeswap.finance',
+        href: 'https://docs.pyroswap.com',
       },
       {
         label: t('Blog'),
