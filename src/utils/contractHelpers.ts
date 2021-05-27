@@ -63,6 +63,9 @@ export const getErc721Contract = (address: string, web3?: Web3) => {
 export const getLpContract = (address: string, web3?: Web3) => {
   return getContract(lpTokenAbi, address, web3)
 }
+export const getIfoContract = (address: string, web3?: Web3) => {
+  return getContract(ifoV1Abi, address, web3)
+}
 export const getIfoV1Contract = (address: string, web3?: Web3) => {
   return getContract(ifoV1Abi, address, web3)
 }

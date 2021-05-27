@@ -1,16 +1,19 @@
 import { useEffect, useMemo } from 'react'
 import BigNumber from 'bignumber.js'
 import { useWeb3React } from '@web3-react/core'
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import { useAppDispatch } from 'state'
-import { orderBy } from 'lodash'
+import { Toast, toastTypes } from '@pyroswap/uikit'
+import { orderBy, kebabCase } from 'lodash'
 import { Team } from 'config/constants/types'
 import Nfts from 'config/constants/nfts'
 import { getWeb3NoAccount } from 'utils/web3'
 import { getBalanceAmount } from 'utils/formatBalance'
 import { BIG_ZERO } from 'utils/bigNumber'
+
 import useRefresh from 'hooks/useRefresh'
 import { filterFarmsByQuoteToken } from 'utils/farmsPriceHelpers'
+
 import {
   fetchFarmsPublicDataAsync,
   fetchPoolsPublicDataAsync,
@@ -18,6 +21,9 @@ import {
   fetchCakeVaultPublicData,
   fetchCakeVaultUserData,
   fetchCakeVaultFees,
+  push as pushToast,
+  remove as removeToast,
+  clear as clearToast,
   setBlock,
 } from './actions'
 import { State, Farm, Pool, ProfileState, TeamsState, AchievementState, PriceState, FarmsState } from './types'
@@ -467,6 +473,34 @@ export const useBetCanClaim = (account: string, roundId: string) => {
 export const useGetLastOraclePrice = (): BigNumber => {
   const lastOraclePrice = useSelector((state: State) => state.predictions.lastOraclePrice)
   return new BigNumber(lastOraclePrice)
+}
+
+// Toasts
+export const useToast = () => {
+  const dispatch = useDispatch()
+  const helpers = useMemo(() => {
+    const push = (toast: Toast) => dispatch(pushToast(toast))
+
+    return {
+      toastError: (title: string, description?: string) => {
+        return push({ id: kebabCase(title), type: toastTypes.DANGER, title, description })
+      },
+      toastInfo: (title: string, description?: string) => {
+        return push({ id: kebabCase(title), type: toastTypes.INFO, title, description })
+      },
+      toastSuccess: (title: string, description?: string) => {
+        return push({ id: kebabCase(title), type: toastTypes.SUCCESS, title, description })
+      },
+      toastWarning: (title: string, description?: string) => {
+        return push({ id: kebabCase(title), type: toastTypes.WARNING, title, description })
+      },
+      push,
+      remove: (id: string) => dispatch(removeToast(id)),
+      clear: () => dispatch(clearToast()),
+    }
+  }, [dispatch])
+
+  return helpers
 }
 
 // Collectibles

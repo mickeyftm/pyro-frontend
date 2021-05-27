@@ -17,29 +17,30 @@ export enum PoolIds {
   poolUnlimited = 'poolUnlimited',
 }
 
-export type IfoStatus = 'idle' | 'coming_soon' | 'live' | 'finished'
 
-interface IfoPoolInfo {
-  saleAmount: string
-  raiseAmount: string
-  cakeToBurn: string
-  distributionRatio: number // Range [0-1]
-}
+
+
+export type IfoStatus = 'idle' | 'coming_soon' | 'live' | 'finished'
 
 export interface Ifo {
   id: string
   isActive: boolean
   address: string
   name: string
-  currency: Token
-  token: Token
+  subTitle?: string
+  description?: string
+  launchDate: string
+  launchTime: string
+  saleAmount: string
+  raiseAmount: string
+  cakeToBurn: string
+  projectSiteUrl: string
+  currency: string
+  currencyAddress: string
+  tokenDecimals: number
+  tokenSymbol: string
   releaseBlockNumber: number
-  articleUrl: string
-  campaignId: string
-  tokenOfferingPrice: number
-  version: number
-  [PoolIds.poolBasic]?: IfoPoolInfo
-  [PoolIds.poolUnlimited]: IfoPoolInfo
+  campaignId?: string
 }
 
 export enum PoolCategory {

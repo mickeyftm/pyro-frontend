@@ -1,47 +1,72 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Box, Heading, Text } from '@pyroswap/uikit'
-import Container from 'components/layout/Container'
+import { Heading, Text } from '@pyroswap/uikit'
 import { useTranslation } from 'contexts/Localization'
+import Container from 'components/layout/Container'
 
-const getGradient = (isDark: boolean) => {
-  if (isDark) {
-    return 'repeating-linear-gradient(to right, #332453, #332453 40px, #281D44 40px, #281D44 80px)'
-  }
+const Title = styled(Heading).attrs({ as: 'h1', scale: 'xl' })`
+  color: #ffffff;
+  margin-bottom: 24px;
+  text-shadow: 2px 2px 2px #00000040;
+`
 
-  return 'repeating-linear-gradient(to right, #21d4e2, #21d4e2 40px, #53dee9 40px, #53dee9 80px)'
-}
+const ComeBack = styled(Text)`
+  background: -webkit-linear-gradient(#ffd800, #eb8c00);
+  font-size: 24px;
+  font-weight: 600;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`
 
 const StyledHero = styled.div`
-  background: ${({ theme }) => getGradient(theme.isDark)};
-  padding-bottom: 40px;
-  padding-top: 40px;
+  background-image: linear-gradient(#bd3e3e, #822a2a);
+  max-height: max-content;
+  overflow: hidden;
+  ${({ theme }) => theme.mediaQueries.sm} {
+    max-height: 256px;
+  }
 `
 
-const CurtainBottom = styled.div`
-  background-image: url('/images/curtain-bottom-${({ theme }) => (theme.isDark ? 'dark' : 'light')}.png');
-  background-repeat: repeat-x;
-  background-size: contain;
-  height: 20px;
+const StyledContainer = styled(Container)`
+  display: flex;
+
+  flex-direction: column-reverse;
+
+  ${({ theme }) => theme.mediaQueries.sm} {
+    flex-direction: row;
+  }
 `
+
+const LeftWrapper = styled.div`
+  flex: 1;
+  padding-right: 0;
+  padding-bottom: 40px;
+  padding-top: 40px;
+
+  ${({ theme }) => theme.mediaQueries.sm} {
+    padding-right: 24px;
+  }
+
+  ${({ theme }) => theme.mediaQueries.lg} {
+    padding-right: 32px;
+  }
+`
+
 
 const Hero = () => {
   const { t } = useTranslation()
 
   return (
-    <Box mb="32px">
-      <StyledHero>
-        <Container>
-          <Heading as="h1" scale="xl" mb="24px">
-            {t('IFO: Initial Farm Offerings')}
-          </Heading>
-          <Text bold fontSize="20px">
-            {t('Buy new tokens with a brand new token sale model.')}
-          </Text>
-        </Container>
-      </StyledHero>
-      <CurtainBottom />
-    </Box>
+    <StyledHero>
+      <StyledContainer>
+        <LeftWrapper>
+          <Title>{t('Initial Farm Offerings!')}</Title>
+          <ComeBack>{t('Use PYRO-ETH LP to buy into Token Sales')}</ComeBack>
+
+        </LeftWrapper>
+
+      </StyledContainer>
+    </StyledHero>
   )
 }
 

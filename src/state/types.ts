@@ -1,3 +1,4 @@
+import { Toast } from '@pyroswap/uikit'
 import BigNumber from 'bignumber.js'
 import { CampaignType, FarmConfig, Nft, PoolConfig, Team } from 'config/constants/types'
 
@@ -53,6 +54,9 @@ export interface Profile {
   hasRegistered: boolean
 }
 
+export interface ToastsState {
+  data: Toast[]
+}
 // Slices states
 
 export interface FarmsState {
