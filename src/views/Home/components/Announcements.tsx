@@ -32,7 +32,7 @@ const CakeStats = () => {
               sourceType: 'profile',
               screenName: 'TwitterDev',
             }}
-            options={{ theme: 'dark', width: '700', height: '300' }}
+            options={{ theme: 'dark', chrome: "noheader, nofooter, transparent", width: '700', height: '300' }}
           />
         </Row>
       </CardBody>

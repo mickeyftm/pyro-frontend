@@ -2,25 +2,22 @@ import React, { useEffect, useMemo, useRef, useState } from 'react'
 import { Route, useRouteMatch } from 'react-router-dom'
 import BigNumber from 'bignumber.js'
 import { useWeb3React } from '@web3-react/core'
-import { Heading, Flex } from '@pyroswap/uikit'
 import orderBy from 'lodash/orderBy'
 import partition from 'lodash/partition'
-import { useTranslation } from 'contexts/Localization'
 import usePersistState from 'hooks/usePersistState'
 import { usePools, useFetchCakeVault } from 'state/hooks'
 import FlexLayout from 'components/layout/Flex'
 import Page from 'components/layout/Page'
-import PageHeader from 'components/PageHeader'
 import PoolCard from './components/PoolCard'
 import CakeVaultCard from './components/CakeVaultCard'
 import PoolTabButtons from './components/PoolTabButtons'
+import Hero from './components/Hero'
 
 const NUMBER_OF_POOLS_VISIBLE = 12
 
 const Pools: React.FC = () => {
   useFetchCakeVault()
   const { path } = useRouteMatch()
-  const { t } = useTranslation()
   const { account } = useWeb3React()
   const pools = usePools(account)
   const [stakedOnly, setStakedOnly] = usePersistState(false, 'pancake_pool_staked')
@@ -62,21 +59,7 @@ const Pools: React.FC = () => {
 
   return (
     <>
-      <PageHeader>
-        <Flex justifyContent="space-between" flexDirection={['column', null, 'row']}>
-          <Flex flexDirection="column" mr={['8px', 0]}>
-            <Heading as="h1" scale="xxl" color="secondary" mb="24px">
-              {t('Firepit Pools (Coming Soon)')}
-            </Heading>
-            <Heading scale="md" color="text">
-              {t('Just stake some tokens to earn.')}
-            </Heading>
-            <Heading scale="md" color="text">
-              {t('High APR, low risk.')}
-            </Heading>
-          </Flex>
-        </Flex>
-      </PageHeader>
+      <Hero />
       <Page>
         <PoolTabButtons
           stakedOnly={stakedOnly}

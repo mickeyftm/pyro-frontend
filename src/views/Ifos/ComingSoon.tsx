@@ -55,7 +55,7 @@ const ComingSoon = () => {
       <Content>
         <div>
           <Block>
-            <Title as="h2">{TranslateString(999, 'Coming Soon to PancakeSwap.')}</Title>
+            <Title as="h2">{TranslateString(999, 'Coming Soon to PyroSwap.')}</Title>
             <Text mb={3}>
               {TranslateString(
                 504,
@@ -63,37 +63,33 @@ const ComingSoon = () => {
               )}
             </Text>
             <Text mb={3}>
-              <LiquidityLink href="https://exchange.pancakeswap.finance/#/add/ETH/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82">
+              <LiquidityLink href="https://dex.pyroswap.com/#/add/ETH/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82">
                 {TranslateString(506, 'Get CAKE-BNB LP >')}
               </LiquidityLink>
             </Text>
             <Text mb={3}>
-              {TranslateString(508, 'The project gets the BNB, PancakeSwap burns the CAKE.')}
+              {TranslateString(508, 'The project gets the ETH, PyroSwap burns the PYRO.')}
               <br />
               <strong>{TranslateString(510, 'You get the tokens.')}</strong>
             </Text>
           </Block>
-          <MobileImage src="/images/ifo-bunny.svg" alt="ifo bunny" />
           <Block>
             <Title as="h2">{TranslateString(512, 'Want to launch your own IFO?')}</Title>
             <Text mb={3}>
               {TranslateString(
                 514,
-                'Launch your project with PancakeSwap, Binance Smart Chain’s most-used AMM project and liquidity provider, to bring your token directly to the most active and rapidly growing community on BSC.',
+                'Launch your project with PyroSwap, Arbitrums hottest AMM project and liquidity provider, to bring your token directly to the most active and rapidly growing community on Arbitrum.',
               )}
             </Text>
             <Button
               as="a"
-              href="https://docs.google.com/forms/d/e/1FAIpQLScGdT5rrVMr4WOWr08pvcroSeuIOtEJf1sVdQGVdcAOqryigQ/viewform"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfyli0_EivKzU35WWXoCm4-apbvtltCXllKonww9Cj2HgnsNQ/viewform"
               target="_blank"
               rel="noopener noreferrer"
             >
               {TranslateString(516, 'Apply to launch')}
             </Button>
           </Block>
-        </div>
-        <div>
-          <MainImage src="/images/ifo-bunny.svg" alt="ifo bunny" />
         </div>
       </Content>
     </Page>
