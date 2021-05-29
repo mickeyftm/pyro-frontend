@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Card, CardBody, Heading, Button } from '@pyroswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { useWeb3React } from '@web3-react/core'
+import { createReferral } from 'utils/referralHelpers';
 import UnlockWalletCard from '../UnlockWalletCard'
 
 
@@ -37,7 +38,7 @@ const ReferralLink = () => {
 
         </Heading>
           <>
-          {!account ? <UnlockWalletCard /> : <Heading scale="md">{t('0')}</Heading>}
+          {!account ? <UnlockWalletCard /> : <Heading scale="md">{createReferral(account)}</Heading>}
 
           </>
 
