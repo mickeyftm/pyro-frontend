@@ -19,5 +19,11 @@ const referralSchema = new mongoose.Schema({
 export const Referral =  mongoose.model("Referral", referralSchema);
 
 export const getReferralLinkForWallet = async (walletAddress: string) => {
-	return Referral.findOne({wallet: walletAddress}).exec();
+	if (!Referral) {
+		console.log("")
+		await connectDB()
+	}
+	const referralURL = await Referral.findOne({wallet: walletAddress}).exec();
+	console.log("generated URL: ", referralURL)
+	return referralURL
 }

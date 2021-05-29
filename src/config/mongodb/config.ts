@@ -1,2 +1,4 @@
-export const MONGO_URI = "localhost:27017/pyro?retryWrites=true&w=majority"
+import * as dotenv from "dotenv";
+
+export const MONGO_URI = process.env.ATLAS_URI
 export const test="";

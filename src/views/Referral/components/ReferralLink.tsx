@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { Card, CardBody, Heading, Button } from '@pyroswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { useWeb3React } from '@web3-react/core'
 import { createReferral } from 'utils/referralHelpers';
 import UnlockWalletCard from '../UnlockWalletCard'
+
+
+
 
 
 const StyledTotalValueLockedCard = styled(Card)`
@@ -20,8 +23,20 @@ const ButtonWrapper = styled.div`
 `
 
 const ReferralLink = () => {
+  const [createdReferral, setCreatedReferral] = useState(null)
+
   const { t } = useTranslation()
   const { account } = useWeb3React()
+
+  useEffect(() => {
+    console.log("useEffect firing")
+    const fetchCreatedReferral = async () => {
+      const createdReferral1 = await createReferral(account)
+      setCreatedReferral(createdReferral1)
+    }
+    fetchCreatedReferral()
+  }, [account, setCreatedReferral])
+
 
 
   return (
@@ -38,7 +53,7 @@ const ReferralLink = () => {
 
         </Heading>
           <>
-          {!account ? <UnlockWalletCard /> : <Heading scale="md">{createReferral(account)}</Heading>}
+          {!account ? <UnlockWalletCard /> : <Heading scale="md">{createdReferral}</Heading>}
 
           </>
 
