@@ -1,7 +1,7 @@
-# Contributing to the Pancake ecosystem 🥞
+# Contributing to the Pyroswap ecosystem
 
 Thanks for taking the time to contribute !
-You can start by reading our [Contribution guidelines](https://docs.pancakeswap.finance/code/contributing) first.
+
 
 ## Setup
 
@@ -30,7 +30,7 @@ Run tests with `yarn test`.
 
 ## Localisation
 
-Keys should be added to translation.json file, in order to be translated to other languages. 
+Keys should be added to translation.json file, in order to be translated to other languages.
 
 ### Adding translations
 
