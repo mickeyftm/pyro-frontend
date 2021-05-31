@@ -15,7 +15,7 @@ import Balance from 'components/Balance'
 interface BountyModalProps {
   cakeBountyToDisplay: number
   dollarBountyToDisplay: number
-  totalPendingCakeHarvest: BigNumber
+  totalpendingPyroHarvest: BigNumber
   callFee: number
   onDismiss?: () => void
   TooltipComponent: React.ElementType
@@ -31,7 +31,7 @@ const Divider = styled.div`
 const BountyModal: React.FC<BountyModalProps> = ({
   cakeBountyToDisplay,
   dollarBountyToDisplay,
-  totalPendingCakeHarvest,
+  totalpendingPyroHarvest,
   callFee,
   onDismiss,
   TooltipComponent,
@@ -43,7 +43,7 @@ const BountyModal: React.FC<BountyModalProps> = ({
   const cakeVaultContract = useCakeVaultContract()
   const [pendingTx, setPendingTx] = useState(false)
   const callFeeAsDecimal = callFee / 100
-  const totalYieldToDisplay = getBalanceNumber(totalPendingCakeHarvest, 18)
+  const totalYieldToDisplay = getBalanceNumber(totalpendingPyroHarvest, 18)
   const { targetRef, tooltip, tooltipVisible } = useTooltip(<TooltipComponent />, {
     placement: 'bottom',
     tooltipPadding: { right: 15 },

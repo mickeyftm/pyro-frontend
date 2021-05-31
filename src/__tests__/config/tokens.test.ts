@@ -14,11 +14,11 @@ describe('Config tokens', () => {
     async (key, token: Token) => {
       const [[symbol], [decimals]] = await multicall(erc20ABI, [
         {
-          address: token.address[56],
+          address: token.address[4],
           name: 'symbol',
         },
         {
-          address: token.address[56],
+          address: token.address[4],
           name: 'decimals',
         },
       ])

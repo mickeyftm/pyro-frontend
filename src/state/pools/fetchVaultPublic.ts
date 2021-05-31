@@ -7,11 +7,11 @@ const cakeVaultContract = getCakeVaultContract()
 
 export const fetchPublicVaultData = async () => {
   try {
-    const [sharePrice, shares, estimatedCakeBountyReward, totalPendingCakeHarvest] = await makeBatchRequest([
+    const [sharePrice, shares, estimatedCakeBountyReward, totalpendingPyroHarvest] = await makeBatchRequest([
       cakeVaultContract.methods.getPricePerFullShare().call,
       cakeVaultContract.methods.totalShares().call,
       cakeVaultContract.methods.calculateHarvestCakeRewards().call,
-      cakeVaultContract.methods.calculateTotalPendingCakeRewards().call,
+      cakeVaultContract.methods.calculateTotalpendingPyroRewards().call,
     ])
     const totalSharesAsBigNumber = new BigNumber(shares as string)
     const sharePriceAsBigNumber = new BigNumber(sharePrice as string)
@@ -21,7 +21,7 @@ export const fetchPublicVaultData = async () => {
       pricePerFullShare: sharePriceAsBigNumber.toJSON(),
       totalCakeInVault: totalCakeInVaultEstimate.cakeAsBigNumber.toJSON(),
       estimatedCakeBountyReward: new BigNumber(estimatedCakeBountyReward as string).toJSON(),
-      totalPendingCakeHarvest: new BigNumber(totalPendingCakeHarvest as string).toJSON(),
+      totalpendingPyroHarvest: new BigNumber(totalpendingPyroHarvest as string).toJSON(),
     }
   } catch (error) {
     return {
@@ -29,7 +29,7 @@ export const fetchPublicVaultData = async () => {
       pricePerFullShare: null,
       totalCakeInVault: null,
       estimatedCakeBountyReward: null,
-      totalPendingCakeHarvest: null,
+      totalpendingPyroHarvest: null,
     }
   }
 }

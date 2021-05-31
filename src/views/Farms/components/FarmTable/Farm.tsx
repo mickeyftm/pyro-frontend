@@ -16,7 +16,7 @@ const IconImage = styled(Image)`
   height: 24px;
 
   ${({ theme }) => theme.mediaQueries.sm} {
-    width: 40px;
+    width: 59.93px;
     height: 40px;
   }
 `
@@ -50,7 +50,7 @@ const Farm: React.FunctionComponent<FarmProps> = ({ image, label, pid }) => {
 
   return (
     <Container>
-      <IconImage src={`/images/farms/${image}.svg`} alt="icon" width={40} height={40} mr="8px" />
+      <IconImage src={`/images/farms/${image}.png`} alt="icon" width={59.93} height={40} mr="8px" />
       <div>
         {handleRenderFarming()}
         <Text bold>{label}</Text>

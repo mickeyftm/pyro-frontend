@@ -31,7 +31,7 @@ const BountyCard = () => {
   const { t } = useTranslation()
   const {
     estimatedCakeBountyReward,
-    totalPendingCakeHarvest,
+    totalpendingPyroHarvest,
     fees: { callFee },
   } = useCakeVault()
   const cakePriceBusd = usePriceCakeBusd()
@@ -65,7 +65,7 @@ const BountyCard = () => {
     <BountyModal
       cakeBountyToDisplay={cakeBountyToDisplay}
       dollarBountyToDisplay={dollarBountyToDisplay}
-      totalPendingCakeHarvest={totalPendingCakeHarvest}
+      totalpendingPyroHarvest={totalpendingPyroHarvest}
       callFee={callFee}
       TooltipComponent={TooltipComponent}
     />,

@@ -202,7 +202,7 @@ export const useCakeVault = () => {
     pricePerFullShare: pricePerFullShareAsString,
     totalCakeInVault: totalCakeInVaultAsString,
     estimatedCakeBountyReward: estimatedCakeBountyRewardAsString,
-    totalPendingCakeHarvest: totalPendingCakeHarvestAsString,
+    totalpendingPyroHarvest: totalpendingPyroHarvestAsString,
     fees: { performanceFee, callFee, withdrawalFee, withdrawalFeePeriod },
     userData: {
       isLoading,
@@ -217,9 +217,9 @@ export const useCakeVault = () => {
     return new BigNumber(estimatedCakeBountyRewardAsString)
   }, [estimatedCakeBountyRewardAsString])
 
-  const totalPendingCakeHarvest = useMemo(() => {
-    return new BigNumber(totalPendingCakeHarvestAsString)
-  }, [totalPendingCakeHarvestAsString])
+  const totalpendingPyroHarvest = useMemo(() => {
+    return new BigNumber(totalpendingPyroHarvestAsString)
+  }, [totalpendingPyroHarvestAsString])
 
   const totalShares = useMemo(() => {
     return new BigNumber(totalSharesAsString)
@@ -246,7 +246,7 @@ export const useCakeVault = () => {
     pricePerFullShare,
     totalCakeInVault,
     estimatedCakeBountyReward,
-    totalPendingCakeHarvest,
+    totalpendingPyroHarvest,
     fees: {
       performanceFee,
       callFee,
@@ -347,12 +347,12 @@ export const useGetApiPrice = (address: string) => {
 }
 
 export const usePriceBnbBusd = (): BigNumber => {
-  const bnbBusdFarm = useFarmFromPid(252)
+  const bnbBusdFarm = useFarmFromPid(5)
   return bnbBusdFarm.tokenPriceVsQuote ? new BigNumber(1).div(bnbBusdFarm.tokenPriceVsQuote) : BIG_ZERO
 }
 
 export const usePriceCakeBusd = (): BigNumber => {
-  const cakeBnbFarm = useFarmFromPid(251)
+  const cakeBnbFarm = useFarmFromPid(5)
   const bnbBusdPrice = usePriceBnbBusd()
 
   const cakeBusdPrice = cakeBnbFarm.tokenPriceVsQuote ? bnbBusdPrice.times(cakeBnbFarm.tokenPriceVsQuote) : BIG_ZERO

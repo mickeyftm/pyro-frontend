@@ -274,7 +274,7 @@
   },
   {
     "inputs": [],
-    "name": "calculateTotalPendingCakeRewards",
+    "name": "calculateTotalpendingPyroRewards",
     "outputs": [
       {
         "internalType": "uint256",

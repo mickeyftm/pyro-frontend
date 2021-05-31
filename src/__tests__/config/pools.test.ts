@@ -14,7 +14,7 @@ describe('Config pools', () => {
   it.each(pools.map((pool) => [pool.sousId, pool.contractAddress]))(
     'Pool #%d has an unique contract address',
     (sousId, contractAddress) => {
-      const duplicates = pools.filter((p) => contractAddress[56] === p.contractAddress[56])
+      const duplicates = pools.filter((p) => contractAddress[4] === p.contractAddress[4])
       expect(duplicates).toHaveLength(1)
     },
   )
@@ -23,7 +23,7 @@ describe('Config pools', () => {
     async (pool) => {
       const contract = getSouschefContract(pool.sousId)
       const rewardTokenAddress = await contract.methods.rewardToken().call()
-      expect(rewardTokenAddress.toLowerCase()).toBe(pool.earningToken.address[56].toLowerCase())
+      expect(rewardTokenAddress.toLowerCase()).toBe(pool.earningToken.address[4].toLowerCase())
     },
   )
   it.each(poolsToTest.filter((pool) => pool.stakingToken.symbol !== 'BNB'))(
@@ -38,7 +38,7 @@ describe('Config pools', () => {
         stakingTokenAddress = await contract.methods.syrup().call()
       }
 
-      expect(stakingTokenAddress.toLowerCase()).toBe(pool.stakingToken.address[56].toLowerCase())
+      expect(stakingTokenAddress.toLowerCase()).toBe(pool.stakingToken.address[4].toLowerCase())
     },
   )
 })
