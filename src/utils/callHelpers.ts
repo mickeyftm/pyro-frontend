@@ -36,7 +36,7 @@ export const sousStake = async (sousChefContract, amount, decimals = 18, account
     })
 }
 
-export const sousStakeBnb = async (sousChefContract, amount, account) => {
+export const sousStakeEth = async (sousChefContract, amount, account) => {
   return sousChefContract.methods
     .deposit()
     .send({ from: account, gas: DEFAULT_GAS, value: new BigNumber(amount).times(DEFAULT_TOKEN_DECIMAL).toString() })
@@ -92,7 +92,7 @@ export const harvest = async (masterChefContract, pid, account) => {
   }
 
   return masterChefContract.methods
-    .deposit(pid, '0')
+    .deposit(pid, '0',account)
     .send({ from: account, gas: DEFAULT_GAS })
     .on('transactionHash', (tx) => {
       return tx.transactionHash
@@ -108,7 +108,7 @@ export const soushHarvest = async (sousChefContract, account) => {
     })
 }
 
-export const soushHarvestBnb = async (sousChefContract, account) => {
+export const soushHarvestEth = async (sousChefContract, account) => {
   return sousChefContract.methods
     .deposit()
     .send({ from: account, gas: DEFAULT_GAS, value: BIG_ZERO })

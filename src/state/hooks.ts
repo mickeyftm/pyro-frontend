@@ -97,7 +97,7 @@ export const useFarmFromTokenSymbol = (tokenSymbol: string, preferredQuoteTokens
 
 export const useBusdPriceFromPid = (pid: number): BigNumber => {
   const farm = useFarmFromPid(pid)
-  const bnbPriceBusd = usePriceBnbBusd()
+  const ethPriceBusd = usePriceEthBusd()
   const quoteTokenFarm = useFarmFromTokenSymbol(farm?.quoteToken?.symbol)
 
   // Catch in case a farm isn't found
@@ -105,32 +105,32 @@ export const useBusdPriceFromPid = (pid: number): BigNumber => {
     return null
   }
 
-  // With a quoteToken of BUSD or wBNB, it is straightforward to return the token price.
-  if (farm.quoteToken.symbol === 'BUSD') {
+  // With a quoteToken of BUSD or wETH, it is straightforward to return the token price.
+  if (farm.quoteToken.symbol === 'USDT') {
     return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : BIG_ZERO
   }
 
-  if (farm.quoteToken.symbol === 'wBNB') {
-    return bnbPriceBusd.gt(0) ? bnbPriceBusd.times(farm.tokenPriceVsQuote) : BIG_ZERO
+  if (farm.quoteToken.symbol === 'wETH') {
+    return ethPriceBusd.gt(0) ? ethPriceBusd.times(farm.tokenPriceVsQuote) : BIG_ZERO
   }
 
   // Possible alternative farm quoteTokens:
   // UST (i.e. MIR-UST), pBTC (i.e. PNT-pBTC), BTCB (i.e. bBADGER-BTCB), ETH (i.e. SUSHI-ETH)
-  // If the farm's quote token isn't BUSD or wBNB, we then use the quote token, of the original farm's quote token
+  // If the farm's quote token isn't BUSD or wETH, we then use the quote token, of the original farm's quote token
   // i.e. for farm PNT - pBTC
-  // we find the pBTC farm (pBTC - BNB)'s quote token - BNB
-  // from the BNB - pBTC BUSD price, we can calculate the PNT - BUSD price
-  if (quoteTokenFarm.quoteToken.symbol === 'wBNB') {
-    const quoteTokenInBusd = bnbPriceBusd.gt(0) && bnbPriceBusd.times(quoteTokenFarm.tokenPriceVsQuote)
+  // we find the pBTC farm (pBTC - ETH)'s quote token - ETH
+  // from the ETH - pBTC BUSD price, we can calculate the PNT - BUSD price
+  if (quoteTokenFarm.quoteToken.symbol === 'wETH') {
+    const quoteTokenInBusd = ethPriceBusd.gt(0) && ethPriceBusd.times(quoteTokenFarm.tokenPriceVsQuote)
     return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote).times(quoteTokenInBusd) : BIG_ZERO
   }
 
-  if (quoteTokenFarm.quoteToken.symbol === 'BUSD') {
+  if (quoteTokenFarm.quoteToken.symbol === 'USDT') {
     const quoteTokenInBusd = quoteTokenFarm.tokenPriceVsQuote
     return quoteTokenInBusd ? new BigNumber(farm.tokenPriceVsQuote).times(quoteTokenInBusd) : BIG_ZERO
   }
 
-  // Catch in case token does not have immediate or once-removed BUSD/wBNB quoteToken
+  // Catch in case token does not have immediate or once-removed BUSD/wETH quoteToken
   return BIG_ZERO
 }
 
@@ -346,16 +346,16 @@ export const useGetApiPrice = (address: string) => {
   return prices[address.toLowerCase()]
 }
 
-export const usePriceBnbBusd = (): BigNumber => {
-  const bnbBusdFarm = useFarmFromPid(5)
-  return bnbBusdFarm.tokenPriceVsQuote ? new BigNumber(1).div(bnbBusdFarm.tokenPriceVsQuote) : BIG_ZERO
+export const usePriceEthBusd = (): BigNumber => {
+  const ethBusdFarm = useFarmFromPid(1)
+  return ethBusdFarm.tokenPriceVsQuote ? new BigNumber(1).div(ethBusdFarm.tokenPriceVsQuote) : BIG_ZERO
 }
 
 export const usePriceCakeBusd = (): BigNumber => {
-  const cakeBnbFarm = useFarmFromPid(5)
-  const bnbBusdPrice = usePriceBnbBusd()
+  const cakeEthFarm = useFarmFromPid(1)
+  const ethBusdPrice = usePriceEthBusd()
 
-  const cakeBusdPrice = cakeBnbFarm.tokenPriceVsQuote ? bnbBusdPrice.times(cakeBnbFarm.tokenPriceVsQuote) : BIG_ZERO
+  const cakeBusdPrice = cakeEthFarm.tokenPriceVsQuote ? ethBusdPrice.times(cakeEthFarm.tokenPriceVsQuote) : BIG_ZERO
 
   return cakeBusdPrice
 }

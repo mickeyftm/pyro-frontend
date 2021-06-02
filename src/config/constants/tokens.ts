@@ -1,18 +1,18 @@
 const tokens = {
-  bnb: {
+  eth: {
     symbol: 'ETH',
     projectLink: 'https://www.ethereum.org/',
   },
   cake: {
     symbol: 'PYRO',
     address: {
-      4: '0x489e754e3bc89A1911539b17A1b9c2D2E68F21EC',
+      4: '0x7e6dB6BA3ee86907C59fd4538e1040Cc7821Aa00',
       97: '',
     },
     decimals: 18,
     projectLink: 'https://pyroswap.com/',
   },
-  wbnb: {
+  weth: {
     symbol: 'wETH',
     address: {
       4: '0xc778417E063141139Fce010982780140Aa0cD5Ab',
@@ -21,10 +21,10 @@ const tokens = {
     decimals: 18,
     projectLink: 'https://pyroswap.com/',
   },
-  busd: {
-    symbol: 'BUSD',
+  usdt: {
+    symbol: 'USDT',
     address: {
-      4: '0xB71b011A1C56cAa99047B6091A4B30454cdEc583',
+      4: '0xaBEDC14CEeaCB6F35b0c756c87bA6e3797b6b1aD',
       97: '',
     },
     decimals: 18,

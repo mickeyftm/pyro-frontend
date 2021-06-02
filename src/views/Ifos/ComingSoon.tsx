@@ -59,12 +59,12 @@ const ComingSoon = () => {
             <Text mb={3}>
               {TranslateString(
                 504,
-                'You’ll pay for the new tokens using CAKE-BNB LP tokens, which means you need to stake equal amounts of CAKE and BNB in a liquidity pool to take part.',
+                'You’ll pay for the new tokens using CAKE-ETH LP tokens, which means you need to stake equal amounts of CAKE and ETH in a liquidity pool to take part.',
               )}
             </Text>
             <Text mb={3}>
               <LiquidityLink href="https://dex.pyroswap.com/#/add/ETH/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82">
-                {TranslateString(506, 'Get CAKE-BNB LP >')}
+                {TranslateString(506, 'Get CAKE-ETH LP >')}
               </LiquidityLink>
             </Text>
             <Text mb={3}>

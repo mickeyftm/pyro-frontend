@@ -2,9 +2,9 @@ import BigNumber from 'bignumber.js'
 import poolsConfig from 'config/constants/pools'
 import sousChefABI from 'config/abi/sousChef.json'
 import cakeABI from 'config/abi/cake.json'
-import wbnbABI from 'config/abi/weth.json'
+import wethABI from 'config/abi/weth.json'
 import multicall from 'utils/multicall'
-import { getAddress, getWbnbAddress } from 'utils/addressHelpers'
+import { getAddress, getWethAddress } from 'utils/addressHelpers'
 import { BIG_ZERO } from 'utils/bigNumber'
 import { getSouschefV2Contract } from 'utils/contractHelpers'
 
@@ -38,10 +38,10 @@ export const fetchPoolsBlockLimits = async () => {
 }
 
 export const fetchPoolsTotalStaking = async () => {
-  const nonBnbPools = poolsConfig.filter((p) => p.stakingToken.symbol !== 'BNB')
-  const bnbPool = poolsConfig.filter((p) => p.stakingToken.symbol === 'BNB')
+  const nonEthPools = poolsConfig.filter((p) => p.stakingToken.symbol !== 'ETH')
+  const ethPool = poolsConfig.filter((p) => p.stakingToken.symbol === 'ETH')
 
-  const callsNonBnbPools = nonBnbPools.map((poolConfig) => {
+  const callsNonEthPools = nonEthPools.map((poolConfig) => {
     return {
       address: getAddress(poolConfig.stakingToken.address),
       name: 'balanceOf',
@@ -49,25 +49,25 @@ export const fetchPoolsTotalStaking = async () => {
     }
   })
 
-  const callsBnbPools = bnbPool.map((poolConfig) => {
+  const callsEthPools = ethPool.map((poolConfig) => {
     return {
-      address: getWbnbAddress(),
+      address: getWethAddress(),
       name: 'balanceOf',
       params: [getAddress(poolConfig.contractAddress)],
     }
   })
 
-  const nonBnbPoolsTotalStaked = await multicall(cakeABI, callsNonBnbPools)
-  const bnbPoolsTotalStaked = await multicall(wbnbABI, callsBnbPools)
+  const nonEthPoolsTotalStaked = await multicall(cakeABI, callsNonEthPools)
+  const ethPoolsTotalStaked = await multicall(wethABI, callsEthPools)
 
   return [
-    ...nonBnbPools.map((p, index) => ({
+    ...nonEthPools.map((p, index) => ({
       sousId: p.sousId,
-      totalStaked: new BigNumber(nonBnbPoolsTotalStaked[index]).toJSON(),
+      totalStaked: new BigNumber(nonEthPoolsTotalStaked[index]).toJSON(),
     })),
-    ...bnbPool.map((p, index) => ({
+    ...ethPool.map((p, index) => ({
       sousId: p.sousId,
-      totalStaked: new BigNumber(bnbPoolsTotalStaked[index]).toJSON(),
+      totalStaked: new BigNumber(ethPoolsTotalStaked[index]).toJSON(),
     })),
   ]
 }
@@ -86,7 +86,7 @@ export const fetchPoolsStakingLimits = async (
   poolsWithStakingLimit: number[],
 ): Promise<{ [key: string]: BigNumber }> => {
   const validPools = poolsConfig
-    .filter((p) => p.stakingToken.symbol !== 'BNB' && !p.isFinished)
+    .filter((p) => p.stakingToken.symbol !== 'ETH' && !p.isFinished)
     .filter((p) => !poolsWithStakingLimit.includes(p.sousId))
 
   // Get the staking limit for each valid pool

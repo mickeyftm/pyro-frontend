@@ -47,7 +47,7 @@ describe('transformBetResponse', () => {
     address: 'address',
     block: '500',
     totalBets: '20',
-    totalBNB: '43',
+    totalETH: '43',
   }
 
   it('returns a correctly transformed betresponse without round', () => {
@@ -71,7 +71,7 @@ describe('transformBetResponse', () => {
         address: 'address',
         block: 500,
         totalBets: 20,
-        totalBNB: 43,
+        totalETH: 43,
       },
     })
   })
@@ -137,7 +137,7 @@ describe('transformBetResponse', () => {
         address: 'address',
         block: 500,
         totalBets: 20,
-        totalBNB: 43,
+        totalETH: 43,
       },
     })
   })

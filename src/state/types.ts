@@ -140,7 +140,7 @@ export interface PriceApiList {
     name: string
     symbol: string
     price: string
-    price_BNB: string
+    price_ETH: string
   }
 }
 
@@ -241,7 +241,7 @@ export interface PredictionUser {
   address: string
   block: number
   totalBets: number
-  totalBNB: number
+  totalETH: number
 }
 
 export interface RoundData {
