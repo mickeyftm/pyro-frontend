@@ -17,6 +17,28 @@ const farms: FarmConfig[] = [
     harvestLockup: '1 Minute',
   },
   {
+    pid: 2,
+    lpSymbol: 'PYRO-ETH LP',
+    lpAddresses: {
+      97: '',
+      4: '0x6d427a0C38A3c07E261561ea54f2A5D3F20B9F58',
+    },
+    token: tokens.cake,
+    quoteToken: tokens.weth,
+    harvestLockup: '1 Minute',
+  },
+  {
+    pid: 3,
+    lpSymbol: 'PYRO-USDT LP',
+    lpAddresses: {
+      97: '',
+      4: '0x6d427a0C38A3c07E261561ea54f2A5D3F20B9F58',
+    },
+    token: tokens.cake,
+    quoteToken: tokens.usdt,
+    harvestLockup: '1 Minute',
+  },
+  {
     pid: 1,
     lpSymbol: 'ETH-USDT LP',
     lpAddresses: {
