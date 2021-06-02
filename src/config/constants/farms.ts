@@ -49,6 +49,17 @@ const farms: FarmConfig[] = [
     quoteToken: tokens.usdt,
     harvestLockup: '1 Minute',
   },
+  {
+    pid: 4,
+    lpSymbol: 'USDT',
+    lpAddresses: {
+      97: '',
+      4: '0xaBEDC14CEeaCB6F35b0c756c87bA6e3797b6b1aD',
+    },
+    token: tokens.usdt,
+    quoteToken: tokens.usdt,
+    harvestLockup: '1 Minute',
+  },
 
 ]
 
