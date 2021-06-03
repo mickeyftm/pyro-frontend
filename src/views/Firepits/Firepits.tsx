@@ -148,7 +148,7 @@ const Firepits: React.FC = () => {
 
 
   // Filter out normal Farms
-  const activeFarms = farmsLP.filter((farm) => farm.pid !== 0 && farm.multiplier !== '0X' && !isArchivedPid(farm.pid)
+  const activeFarms = farmsLP.filter((farm) => farm.multiplier !== '0X' && !isArchivedPid(farm.pid)
   && farm.pid !== 1
   && farm.pid !== 2
   && farm.pid !== 3
